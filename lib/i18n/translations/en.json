@@ -1,0 +1,40 @@
+{
+  "common": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "industries": "Industries",
+    "caseStudies": "Case Studies",
+    "about": "About",
+    "contact": "Contact",
+    "getQuote": "Get Quote",
+    "contactUs": "Contact Us",
+    "learnMore": "Learn More",
+    "viewAll": "View All"
+  },
+  "home": {
+    "hero": {
+      "title": "Industrial Solutions That Drive Transformation",
+      "subtitle": "Electrical systems, manufacturing expertise, and strategic partnerships delivering $10B+ in value across the GCC"
+    },
+    "stats": {
+      "portfolioValue": "Portfolio Value",
+      "yearsExperience": "Years Experience",
+      "countriesServed": "Countries Served",
+      "majorProjects": "Major Projects"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to discuss your industrial project? Our team is here to help you achieve your goals",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "company": "Company",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending..."
+    }
+  }
+}
