@@ -4,7 +4,8 @@ import { SolutionsGrid } from "@/components/sections/solutions-grid"
 import { CaseStudyCard } from "@/components/sections/case-study-card"
 import { CTASection } from "@/components/sections/cta-section"
 import { Zap, Factory, Power, Settings } from "lucide-react"
-import {FarrajPortfolio} from "@/components/sections/home"
+import FarrajPortfolio  from "@/components/sections/home"
+import { Header } from "@/components/layout/header"
 const stats = [
   { value: "$10B+", label: "Portfolio Value" },
   { value: "20+", label: "Years Experience" },
@@ -81,15 +82,16 @@ const featuredCaseStudies = [
 export default function HomePage() {
   return (
     <>
-      <HeroSection
+      {/* <HeroSection
         title="Industrial Solutions That Drive Transformation"
         subtitle="Electrical systems, manufacturing expertise, and strategic partnerships delivering $10B+ in value across the GCC"
         primaryCTA={{ text: "Explore Our Solutions", href: "/solutions" }}
         secondaryCTA={{ text: "View Case Studies", href: "/case-studies" }}
-      />
+      /> */}
 
-      <StatsBar stats={stats} />
+      {/* <StatsBar stats={stats} /> */}
       <FarrajPortfolio />
+        <Header />
 
       <SolutionsGrid solutions={solutions} />
 

@@ -123,3 +123,52 @@
     @apply bg-background text-foreground;
   }
 }
+/* -------------------------------------------------
+   Custom animations (replaces <style jsx>)
+   ------------------------------------------------- */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+@keyframes shimmer-slow {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-20px); }
+}
+@keyframes float-delayed {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-20px); }
+}
+@keyframes grid-move {
+  0%   { transform: translate(0,0); }
+  100% { transform: translate(100px,100px); }
+}
+@keyframes pattern {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes gradient-shift {
+  0%,100% { background-position: 0% 50%; }
+  50%     { background-position: 100% 50%; }
+}
+
+/* Utility classes */
+.animate-fade-in-up { animation: fade-in-up .8s ease-out forwards; opacity:0; }
+.animate-menu-item  { animation: fadeInUp .5s ease-out forwards; opacity:0; }
+.animate-float      { animation: float 6s ease-in-out infinite; }
+.animate-float-delayed { animation: float 6s ease-in-out infinite 3s; }
+.animate-shimmer    { animation: shimmer 3s linear infinite; }
+.animate-shimmer-slow { animation: shimmer-slow 4s linear infinite; }
+.animate-pattern    { animation: pattern 60s linear infinite; }
+.animate-gradient-shift { animation: gradient-shift 3s ease infinite; }
